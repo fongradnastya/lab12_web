@@ -215,3 +215,10 @@ $rows-end: 2, 3, 5, 4, 5, 5, 5;
         max-width: 100%;
     }
 }
+
+.limited__img {
+    margin-right: 40px;
+    img{
+        width: 100%;
+    }
+}

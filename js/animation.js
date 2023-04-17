@@ -38,3 +38,16 @@ function getTopPos(el){
     return rect.top + scrolltop;
 } 
 
+
+function new_animation(){
+    $(".limited__img").animate(
+        {
+            width: "300px",
+            height: "300px"
+            //opacity: "toggle"
+        }, 
+        1000, "linear"
+    );
+}
+
+new_animation();

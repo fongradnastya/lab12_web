@@ -353,4 +353,11 @@ footer {
 
 .arrow img {
   max-width: 100%;
+}
+
+.limited__img {
+  margin-right: 40px;
+}
+.limited__img img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

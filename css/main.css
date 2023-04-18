@@ -262,6 +262,9 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.categories__category:hover {
+  background: #d6d6d6;
+}
 
 .categories__link {
   display: flex;

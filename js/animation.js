@@ -25,7 +25,6 @@ if ($("._anim_items")){
                 hide_animation($(this));
             })
         }
-        
     });
 }
 

@@ -34,7 +34,7 @@ function show_animation(block){
     block.animate(
         {
             opacity: 1, 
-            right: 0
+            left: 0
         }, 
         'slow'
     );
@@ -46,7 +46,7 @@ function hide_animation(block){
     block.animate(
         {
             opacity: 0, 
-            right: 0
+            left: 0
         }, 
         'slow'
     );

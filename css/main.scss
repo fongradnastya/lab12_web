@@ -7,7 +7,12 @@ $font_size: 14px;
 #s1{
     background: rgb(251,239,239);
     background: radial-gradient(circle, rgba(236,238,222,1) 0%, rgba(251,239,239,1) 10%, rgba(193,213,236,1) 100%);
-    margin: 0;
+    margin: 0 0 200px 0;
+    padding-bottom: 200px;
+}
+
+.central-card{
+    margin-top: 100px;
 }
 
 $success: #53ed8c;
@@ -179,4 +184,22 @@ $rows-end: 2, 3, 5, 4, 5, 5, 5;
 
 ._anim_items{
     opacity: 0;
+}
+
+.model-container{
+    position: relative;
+}
+
+.model-left{
+    position: absolute;
+    top: -150px;
+    left: -100px;
+    max-width: 325px;
+}
+
+.model-right{
+    position: absolute;
+    top: -150px;
+    right: -50px;
+    max-width: 350px;
 }

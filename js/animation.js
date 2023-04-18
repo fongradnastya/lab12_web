@@ -1,50 +1,21 @@
-const animItems = document.querySelectorAll("._anim_items");
+const animItems = $("._anim_items");
 
-if (animItems.length > 0){
-    window.addEventListener('scroll', animate);
+if ($("._anim_items")){
+    $(window).scroll(function()
+    {
+        if ($(this).scrollTop() > 0) {
+            $("._anim_items").each(function(){
+                new_animation($(this));
+            })
+        }
+    });
 }
 
-function animate(){
-    for(let i = 0; i < animItems.length; i++){
-        animOnScroll(animItems[i]);
-    }
-}
-
-animate();
-
-function animOnScroll(animItem){
-    const animHeight = animItem.offsetHeight;
-    let animPos = getTopPos(animItem);
-    const animStart = 10;
-    let animItemPoint = window.innerHeight - animHeight / animStart;
-    if(animHeight > window.innerHeight){
-        animItemPoint = window.innerHeight - window.innerHeight / animStart;
-    }
-    if(isNaN(animPos)){
-        animPos = 0; 
-    }
-    if(scrollY > animPos - animItemPoint && scrollY < animPos + animHeight){
-        
-        animItem.classList.add('_active');
-    }
-    else if(!animItem.classList.contains("_anim-no-hide")){
-        animItem.classList.remove('_active');
-    }
-}
-
-function getTopPos(el){
-    const rect = el.getBoundingClientRect(),
-    scrolltop = window.pageYOffset || document.documentElement.scrolltop;
-    return rect.top + scrolltop;
-} 
-
-
-function new_animation(){
-    $(".limited__img").animate(
+function new_animation(block){
+    block.animate(
         {
             width: "300px",
             height: "300px"
-            //opacity: "toggle"
         }, 
         1000, "linear"
     );

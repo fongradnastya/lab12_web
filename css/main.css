@@ -313,4 +313,8 @@ footer {
 }
 .limited__img img {
   width: 100%;
+}
+
+._anim_items {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
